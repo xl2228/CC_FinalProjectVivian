@@ -21,4 +21,3 @@ function startButton(){
 	bgm_start.play();
 	bgm_start.loop();
 }
-
