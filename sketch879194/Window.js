@@ -1,6 +1,6 @@
-var windowStart = false;
+
 var img_window;
-var windowShow;
+var scale = 0.8;
 
 
 function preloadWindow(){
@@ -8,6 +8,5 @@ function preloadWindow(){
 
 }
 function program(){
-	windowShow = createSprite(400,400);
-	windowShow.addImage(img_window);
+image(img_window, 0, 0, width, img_window.height*width/img_window.width)
 }

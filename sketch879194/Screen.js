@@ -12,7 +12,6 @@ function screenScene(){
 	background(206,244,236);
 	laptopC_Click = createSprite(400,580);
 	laptopC_Click.addImage(img_laptopC);
-	laptopC_Click.mouseActive = true;
 }
 
 

@@ -2,6 +2,7 @@ function preload() {
 	preloadOpening();
 	preloadLaptop();
 	preloadScreen();
+	preloadWindow();
 }
 
 function setup() {
@@ -9,6 +10,7 @@ function setup() {
 	startButton();
 	laptopScene();
 	screenScene();
+	program();
 }
 
 
@@ -33,15 +35,20 @@ if (startClick.mouseIsPressed == true){
 	//bgm_button.play();
 	//bgm_button.loop = false;
 }
-if (keyCode==32){
+if (frameCount>=150 && frameCount <=250){
 drawSprite(laptopClick);
-laptopStart = true;
 }
+	
+ if (frameCount>=250 && frameCount <=380){
+	 laptopClick.remove();
+	 drawSprite(laptopC_Click);
+ }
 
-
-if (laptopC_Click.mouseIsPressed == true){
-	laptopEnd = true
+if (frameCount>=380){
+	laptopC_Click.remove();
+	program();
 }
+	
 }
 
 

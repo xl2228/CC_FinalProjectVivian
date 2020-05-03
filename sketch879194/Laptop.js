@@ -14,11 +14,9 @@ function laptopScene(){
 	laptopClick.addImage(img_laptop);
 	laptopClick.mouseActive = true;
 	
-	laptopClick.clicked = function(){
-		laptopClick.remove();
 }
 
-}
+
 
 
 
