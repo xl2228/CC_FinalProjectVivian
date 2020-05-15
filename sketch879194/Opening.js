@@ -13,7 +13,6 @@ function preloadOpening (){
 	
 }
 
-
 function startButton(){
 	startClick = createSprite(667,628,100,100);
 	startClick.addImage(img_startButton);
@@ -21,3 +20,4 @@ function startButton(){
 	bgm_start.play();
 	bgm_start.loop();
 }
+

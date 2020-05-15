@@ -1,12 +1,15 @@
-
+var windowStart = true;
+var windowEnd = false;
 var img_window;
-var scale = 0.8;
-
-
 function preloadWindow(){
-	img_window = loadImage ('window_0.png');
+	img_window = loadImage('window_1.png');
+	
+}
+
+function windowRun(){
+	background (100);
+	image(img_window,0,0);
 
 }
-function program(){
-image(img_window, 0, 0, width, img_window.height*width/img_window.width)
-}
+
+
